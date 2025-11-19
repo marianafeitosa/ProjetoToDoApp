@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ece9e6"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:elevation="6dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:clipToOutline="false"
+        android:paddingBottom="20dp"
+        android:backgroundTintMode="add"
+        android:shape="rectangle"
+        android:background="@drawable/rounded_bg">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📝 Minhas Tarefas"
+            android:textSize="26sp"
+            android:textColor="#222"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/inputTask"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:background="@drawable/input_bg"
+                android:hint="Digite uma tarefa"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:backgroundTint="#007bff"
+                android:textColor="#fff"
+                android:fontFamily="@font/poppins_bold"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/taskList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

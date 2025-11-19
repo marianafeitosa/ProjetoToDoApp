@@ -1,0 +1,44 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="3dp"
+    android:gravity="center_vertical"
+    android:clipToPadding="false"
+    android:clipToOutline="false"
+    android:paddingHorizontal="10dp"
+    android:background="@drawable/item_bg">
+
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#333"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:textSize="13sp"
+        android:backgroundTint="#ffc107"
+        android:textColor="#fff"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:textSize="13sp"
+        android:backgroundTint="#ff4d4d"
+        android:textColor="#fff"
+        android:fontFamily="@font/poppins_bold"/>
+
+</LinearLayout>
