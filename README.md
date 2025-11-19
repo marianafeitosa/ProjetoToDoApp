@@ -1,33 +1,35 @@
-# 📝 To-Do List App
+# 📱 To-Do App (Android)
 
-Bem-vindo ao repositório do **To-Do List App**! Este é um projeto de uma aplicação web para gestão de tarefas, desenvolvido com um backend em Node.js e um frontend simples e leve.
+Aplicativo de lista de tarefas nativo para Android.
 
-## 🚀 Tecnologias Utilizadas
+## 🛠️ Pré-requisitos
 
-### Backend (Servidor)
-- **Node.js**: Ambiente de execução JavaScript.
-- **Express**: Framework para criar a API.
-- **Firebase/Google Cloud**: Para base de dados e autenticação (conforme a configuração da chave de serviço).
-
-### Frontend (Cliente)
-- **HTML5**: Estrutura da página.
-- **CSS3**: Estilização e design.
-- **JavaScript (Vanilla)**: Lógica de interação com o utilizador e conexão com a API.
+- **Android Studio** instalado.
+- **Emulador** configurado ou **Celular** conectado via USB.
 
 ---
 
-## 📂 Estrutura do Projeto
+## 🚀 Como rodar o projeto
 
-O projeto está dividido em duas pastas principais:
+### 1. Baixar o código
+Faça o clone deste repositório ou baixe o ZIP e extraia na sua pasta de preferência.
 
-```bash
-/ProjetoToDoSite
-│
-├── /client          # Contém o Frontend (Site)
-│   ├── index.html   # Página principal
-│   ├── style.css    # Estilos
-│   └── script.js    # Lógica do frontend
-│
-└── /server          # Contém o Backend (API)
-    ├── index.js     # (ou server.js) Código do servidor
-    └── package.json # Dependências do Node.js
+### 2. Abrir no Android Studio
+1. Abra o **Android Studio**.
+2. Clique em **Open** (ou *File > Open*).
+3. Navegue até a pasta onde você baixou o projeto e selecione-a.
+4. Clique em **OK** e aguarde o Android Studio carregar os arquivos (Gradle Sync).
+
+### 3. Executar o App
+1. Na barra superior do Android Studio, selecione o seu emulador ou dispositivo físico.
+2. Clique no botão de **Play** ▶️ (Run 'app').
+3. O aplicativo será instalado e abrirá no dispositivo.
+
+---
+
+## ℹ️ Observação Importante
+
+Para que o aplicativo carregue as tarefas e salve novos dados, certifique-se de que o **servidor (backend)** esteja rodando no seu computador.
+
+---
+
